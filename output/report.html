@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Compliance Evidence Pack</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; color: #222; line-height: 1.35; }
+    h1, h2 { color: #1f2937; }
+    p { margin: 8px 0; }
+
+    .subtitle { color:#555; margin-bottom: 12px; }
+    .meta { margin: 18px 0 22px 0; font-size: 13px; }
+
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin: 20px 0;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      padding: 14px;
+      border-radius: 8px;
+      background: #f9fafb;
+    }
+
+    .card strong { display:block; margin-bottom: 4px; }
+
+    .banner {
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-size: 15px;
+      font-weight: bold;
+      margin: 18px 0 8px 0;
+    }
+
+    .banner-approved { background: #ecfdf5; color: #065f46; border: 1px solid #10b981; }
+    .banner-pending { background: #fee2e2; color: #991b1b; border: 1px solid #f87171; }
+    .banner-flagged { background: #fef9c3; color: #92400e; border: 1px solid #facc15; }
+
+    .impact-note {
+      color:#6b7280;
+      font-size:13px;
+      margin: 0 0 25px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      font-size: 12.5px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f3f4f6;
+      text-align: left;
+    }
+
+    .high { background:#fee2e2; }
+    .medium { background:#fff7ed; }
+    .low { background:#f0fdf4; }
+
+    .risk-high { color:#b91c1c; font-weight:bold; }
+    .risk-medium { color:#ca8a04; font-weight:bold; }
+    .risk-low { color:#059669; font-weight:bold; }
+
+    .compliance-note {
+      font-size: 12px;
+      background: #f3f4f6;
+      border-left: 3px solid #8b5cf6;
+      color: #3b3b4f;
+      margin-top: 7px;
+      padding: 7px 12px;
+      border-radius: 0 6px 6px 0;
+    }
+
+    .small-note {
+      font-size:12px;
+      color:#888;
+      margin-top:10px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+
+
+<h1>AI Research Compliance Evidence Pack</h1>
+<p class="subtitle">
+  Claim verification and approval support for regulated research publication review.
+</p>
+
+
+  <div class="banner banner-pending">
+    ⚠️ Decision Pending — 1 high-risk claim must be resolved before approval.
+  </div>
+
+
+<p class="impact-note">
+  These issues expose the firm to regulatory or client-communication risk if published without correction.
+</p>
+
+<p class="meta">
+  <strong>Dossier:</strong> Building Reliable AI Agents for Institutional Equity Research<br>
+  <strong>Version:</strong> v0.1<br>
+  <strong>Generated:</strong> 2026-05-01 13:41:50.073029
+</p>
+
+<h2>Assurance Summary</h2>
+<div class="summary">
+  <div class="card"><strong>Total claims</strong>30</div>
+  <div class="card"><strong>Numerical claims</strong>18</div>
+  <div class="card"><strong>High risk</strong>1</div>
+  <div class="card"><strong>Medium risk</strong>4</div>
+</div>
+
+<h2>Exception-First Compliance Review</h2>
+
+
+<p style="color:#b91c1c; font-weight:bold; font-size:14px;">
+  ⚠️ 1 high-risk and 4 medium-risk claims identified.
+</p>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Claim</th>
+    <th>Verdict</th>
+    <th>Severity</th>
+    <th>Reason</th>
+    <th>Correction</th>
+  </tr>
+
+  
+
+  
+    
+  
+    
+      <tr class="high">
+        <td>C002</td>
+        <td>
+          The two figures use different evaluation subsets and methodologies, so the spread is not directly comparable — but its magnitude points to architectural choices, not model scale, as the dominant variable in financial AI accuracy.
+          <div class="compliance-note">
+            
+              <span class="risk-high">High:</span> Blocking issue. Resolve before client publication.
+            
+          </div>
+        </td>
+        <td>Unsupported</td>
+        <td>
+          
+            <span class="risk-high">High</span>
+          
+        </td>
+        <td>Benchmark/comparative claim may mislead without clear caveats.</td>
+        <td>Add explicit caveat about comparability or methodology.</td>
+      </tr>
+      
+    
+  
+    
+      <tr class="medium">
+        <td>C003</td>
+        <td>
+          The ~65 percentage-point spread — across non-identical evaluation subsets — is too large to attribute to subset variance or methodological noise alone.
+          <div class="compliance-note">
+            
+              <span class="risk-medium">Medium:</span> Add caveat or clarify wording.
+            
+          </div>
+        </td>
+        <td>Needs review</td>
+        <td>
+          
+            <span class="risk-medium">Medium</span>
+          
+        </td>
+        <td>Claim wording or context could affect interpretation.</td>
+        <td>Qualify the claim or provide stronger substantiation.</td>
+      </tr>
+      
+    
+  
+    
+      <tr class="medium">
+        <td>C004</td>
+        <td>
+          The most parsimonious reading is that architectural choices, not underlying model capabilities, are the dominant performance lever [S013, S032].
+          <div class="compliance-note">
+            
+              <span class="risk-medium">Medium:</span> Add caveat or clarify wording.
+            
+          </div>
+        </td>
+        <td>Needs review</td>
+        <td>
+          
+            <span class="risk-medium">Medium</span>
+          
+        </td>
+        <td>Claim wording or context could affect interpretation.</td>
+        <td>Qualify the claim or provide stronger substantiation.</td>
+      </tr>
+      
+    
+  
+    
+      <tr class="medium">
+        <td>C005</td>
+        <td>
+          On the test set comprising 16,552 questions over hybrid tabular and textual financial reports, the TAGOP model achieves 58% F1 on TAT-QA's hybrid tabular and textual financial test set (16,552 questions), versus 90.8% human-expert F1 on the same set [S010].
+          <div class="compliance-note">
+            
+              <span class="risk-medium">Medium:</span> Add caveat or clarify wording.
+            
+          </div>
+        </td>
+        <td>Needs review</td>
+        <td>
+          
+            <span class="risk-medium">Medium</span>
+          
+        </td>
+        <td>Numerical comparison may need additional context.</td>
+        <td>Add qualifying language, clarify methodology, or contextualise numbers.</td>
+      </tr>
+      
+    
+  
+    
+      <tr class="medium">
+        <td>C006</td>
+        <td>
+          This 32.8 percentage-point gap quantifies the ceiling that general architectures face when processing complex financial documents requiring multi-step reasoning across structured and unstructured data sources.
+          <div class="compliance-note">
+            
+              <span class="risk-medium">Medium:</span> Add caveat or clarify wording.
+            
+          </div>
+        </td>
+        <td>Needs review</td>
+        <td>
+          
+            <span class="risk-medium">Medium</span>
+          
+        </td>
+        <td>Numerical comparison may need additional context.</td>
+        <td>Add qualifying language, clarify methodology, or contextualise numbers.</td>
+      </tr>
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</table>
+
+<p class="small-note">
+  Showing up to 5 flagged claims for readability. Additional exceptions may be present in the full claim ledger.
+</p>
+
+
+
+<h2>Full Claim Ledger</h2>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Type</th>
+    <th>Materiality</th>
+    <th>Claim</th>
+    <th>Verdict</th>
+    <th>Risk Severity</th>
+    <th>Status</th>
+  </tr>
+
+  
+  <tr class="low">
+    <td>C001</td>
+    <td>numerical</td>
+    <td>medium</td>
+    <td>On a 144-question subset of the same benchmark, LinqAlpha's specialised retrieval architecture reaches 97.23% [S013, S017].</td>
+    <td>Supported</td>
+    <td>
+      
+        <span class="risk-low">Low</span>
+      
+    </td>
+    <td>approved</td>
+  </tr>
+  
+  <tr class="high">
+    <td>C002</td>
+    <td>comparative</td>
+    <td>medium</td>
+    <td>The two figures use different evaluation subsets and methodologies, so the spread is not directly comparable — but its magnitude points to architectural choices, not model scale, as the dominant variable in financial AI accuracy.</td>
+    <td>Unsupported</td>
+    <td>
+      
+        <span class="risk-high">High</span>
+      
+    </td>
+    <td>pending</td>
+  </tr>
+  
+  <tr class="medium">
+    <td>C003</td>
+    <td>numerical</td>
+    <td>medium</td>
+    <td>The ~65 percentage-point spread — across non-identical evaluation subsets — is too large to attribute to subset variance or methodological noise alone.</td>
+    <td>Needs review</td>
+    <td>
+      
+        <span class="risk-medium">Medium</span>
+      
+    </td>
+    <td>pending</td>
+  </tr>
+  
+  <tr class="medium">
+    <td>C004</td>
+    <td>numerical</td>
+    <td>medium</td>
+    <td>The most parsimonious reading is that architectural choices, not underlying model capabilities, are the dominant performance lever [S013, S032].</td>
+    <td>Needs review</td>
+    <td>
+      
+        <span class="risk-medium">Medium</span>
+      
+    </td>
+    <td>pending</td>
+  </tr>
+  
+  <tr class="medium">
+    <td>C005</td>
+    <td>numerical</td>
+    <td>medium</td>
+    <td>On the test set comprising 16,552 questions over hybrid tabular and textual financial reports, the TAGOP model achieves 58% F1 on TAT-QA's hybrid tabular and textual financial test set (16,552 questions), versus 90.8% human-expert F1 on the same set [S010].</td>
+    <td>Needs review</td>
+    <td>
+      
+        <span class="risk-medium">Medium</span>
+      
+    </td>
+    <td>pending</td>
+  </tr>
+  
+  <tr class="medium">
+    <td>C006</td>
+    <td>numerical</td>
+    <td>medium</td>
+    <td>This 32.8 percentage-point gap quantifies the ceiling that general architectures face when processing complex financial documents requiring multi-step reasoning across structured and unstructured data sources.</td>
+    <td>Needs review</td>
+    <td>
+      
+        <span class="risk-medium">Medium</span>
+      
+    </td>
+    <td>pending</td>
+  </tr>
+  
+  <tr class="low">
+    <td>C007</td>
+    <td>numerical</td>
+    <td>medium</td>
+    <td>Multi-step financial reasoning exposes fundamental limitations in standard language models when processing sequential computations across multiple data points in financial statements — such as calculating debt-to-equity ratios from balance sheet components or deriving free cash flow from cash flow statements [3].</td>
+    <td>Supported</td>
+    <td>
+      
+        <span class="risk-low">Low</span>
+      
+    </td>
+    <td>approved</td>
+  </tr>
+  
+  <tr class="low">
+    <td>C008</td>
+    <td>unknown</td>
+    <td>medium</td>
+    <td>The systematic nature of these failures indicates architectural rather than training deficiencies.</td>
+    <td>Supported</td>
+    <td>
+      
+        <span class="risk-low">Low</span>
+      
+    </td>
+    <td>approved</td>
+  </tr>
+  
+  <tr class="low">
+    <td>C009</td>
+    <td>unknown</td>
+    <td>medium</td>
+    <td>This architectural enhancement addresses a core limitation: standard RAG systems retrieve indiscriminately, often introducing noise that degrades performance on tasks requiring precise factual accuracy.</td>
+    <td>Supported</td>
+    <td>
+      
+        <span class="risk-low">Low</span>
+      
+    </td>
+    <td>approved</td>
+  </tr>
+  
+  <tr class="low">
+    <td>C010</td>
+    <td>numerical</td>
+    <td>medium</td>
+    <td>Stanford's analysis of legal document processing reveals context window saturation effects that cause accuracy degradation as document length increases [5].</td>
+    <td>Supported</td>
+    <td>
+      
+        <span class="risk-low">Low</span>
+      
+    </td>
+    <td>approved</td>
+  </tr>
+  
+  <tr class="low">
+    <td>C011</td>
+    <td>numerical</td>
+    <td>medium</td>
+    <td>Financial documents — particularly 10-K filings and proxy statements — often exceed optimal context windows, creating systematic accuracy degradation patterns.</td>
+    <td>Supported</td>
+    <td>
+      
+        <span class="risk-low">Low</span>
+      
+    </td>
+    <td>approved</td>
+  </tr>
+  
+  <tr class="low">
+    <td>C012</td>
+    <td>numerical</td>
+    <td>medium</td>
+    <td>Purpose-built systems address this through hierarchical document indexing and selective retrieval strategies that maintain performance across document lengths [6].</td>
+    <td>Supported</td>
+    <td>
+      
+        <span class="risk-low">Low</span>
+      
+    </td>
+    <td>approved</td>
+  </tr>
+  
+  <tr class="low">
+    <td>C013</td>
+    <td>numerical</td>
+    <td>medium</td>
+    <td>Models consistently struggle with cross-referencing data points across multiple tables within the same document, particularly when calculations require combining information from income statements, balance sheets, and cash flow statements [S010, S023].</td>
+    <td>Supported</td>
+    <td>
+      
+        <span class="risk-low">Low</span>
+      
+    </td>
+    <td>approved</td>
+  </tr>
+  
+  <tr class="low">
+    <td>C014</td>
+    <td>unknown</td>
+    <td>medium</td>
+    <td>Temporal reasoning — understanding how financial metrics change across reporting periods — represents another systematic weakness in general-purpose architectures.</td>
+    <td>Supported</td>
+    <td>
+      
+        <span class="risk-low">Low</span>
+      
+    </td>
+    <td>approved</td>
+  </tr>
+  
+  <tr class="low">
+    <td>C015</td>
+    <td>unknown</td>
+    <td>medium</td>
+    <td>Hallucination rates in financial contexts carry particular significance given the precision requirements of institutional research.</td>
+    <td>Supported</td>
+    <td>
+      
+        <span class="risk-low">Low</span>
+      
+    </td>
+    <td>approved</td>
+  </tr>
+  
+  <tr class="low">
+    <td>C016</td>
+    <td>numerical</td>
+    <td>medium</td>
+    <td>Stanford's analysis of legal document processing reports 17% hallucination rates on legal citations specifically — financial citations were not part of the same study [5].</td>
+    <td>Supported</td>
+    <td>
+      
+        <span class="risk-low">Low</span>
+      
+    </td>
+    <td>approved</td>
+  </tr>
+  
+  <tr class="low">
+    <td>C017</td>
+    <td>unknown</td>
+    <td>medium</td>
+    <td>These errors cluster around complex numerical relationships and multi-step reasoning tasks that require maintaining accuracy across extended logical chains.</td>
+    <td>Supported</td>
+    <td>
+      
+        <span class="risk-low">Low</span>
+      
+    </td>
+    <td>approved</td>
+  </tr>
+  
+  <tr class="low">
+    <td>C018</td>
+    <td>numerical</td>
+    <td>medium</td>
+    <td>A research desk processing 200 earnings filings per quarter at 32% accuracy passes ~136 mistaken extractions to the analyst layer; the same desk at 97% passes ~6.</td>
+    <td>Supported</td>
+    <td>
+      
+        <span class="risk-low">Low</span>
+      
+    </td>
+    <td>approved</td>
+  </tr>
+  
+  <tr class="low">
+    <td>C019</td>
+    <td>numerical</td>
+    <td>medium</td>
+    <td>The 22x reduction in error volume — and the analyst time spent verifying or correcting them — is the capital-markets payoff being measured here [S007].</td>
+    <td>Supported</td>
+    <td>
+      
+        <span class="risk-low">Low</span>
+      
+    </td>
+    <td>approved</td>
+  </tr>
+  
+  <tr class="low">
+    <td>C020</td>
+    <td>unknown</td>
+    <td>medium</td>
+    <td>The precision requirements in equity research — where small errors in financial ratio calculations or earnings projections can influence investment decisions worth millions of dollars — make architectural choice a material business consideration rather than a technical optimization.</td>
+    <td>Supported</td>
+    <td>
+      
+        <span class="risk-low">Low</span>
+      
+    </td>
+    <td>approved</td>
+  </tr>
+  
+  <tr class="low">
+    <td>C021</td>
+    <td>unknown</td>
+    <td>medium</td>
+    <td>The performance differential between architectures translates directly to research quality and analyst productivity.</td>
+    <td>Supported</td>
+    <td>
+      
+        <span class="risk-low">Low</span>
+      
+    </td>
+    <td>approved</td>
+  </tr>
+  
+  <tr class="low">
+    <td>C022</td>
+    <td>unknown</td>
+    <td>medium</td>
+    <td>Firms deploying general-purpose models face systematic accuracy limitations that require extensive human verification, negating potential efficiency gains.</td>
+    <td>Supported</td>
+    <td>
+      
+        <span class="risk-low">Low</span>
+      
+    </td>
+    <td>approved</td>
+  </tr>
+  
+  <tr class="low">
+    <td>C023</td>
+    <td>numerical</td>
+    <td>medium</td>
+    <td>Organizations implementing purpose-built financial architectures achieve research throughput improvements while maintaining the precision standards required for institutional decision-making, creating measurable competitive advantages in research delivery speed and accuracy that translate to client retention and revenue growth [8].</td>
+    <td>Supported</td>
+    <td>
+      
+        <span class="risk-low">Low</span>
+      
+    </td>
+    <td>approved</td>
+  </tr>
+  
+  <tr class="low">
+    <td>C024</td>
+    <td>numerical</td>
+    <td>medium</td>
+    <td>[Figure 1: Financial AI accuracy by system architecture (%).</td>
+    <td>Supported</td>
+    <td>
+      
+        <span class="risk-low">Low</span>
+      
+    </td>
+    <td>approved</td>
+  </tr>
+  
+  <tr class="low">
+    <td>C025</td>
+    <td>numerical</td>
+    <td>medium</td>
+    <td>Source: FinanceBench (2024); TAT-QA (2021).</td>
+    <td>Supported</td>
+    <td>
+      
+        <span class="risk-low">Low</span>
+      
+    </td>
+    <td>approved</td>
+  </tr>
+  
+  <tr class="low">
+    <td>C026</td>
+    <td>unknown</td>
+    <td>medium</td>
+    <td>Note: figures use different evaluation subsets — direct comparison requires care.</td>
+    <td>Supported</td>
+    <td>
+      
+        <span class="risk-low">Low</span>
+      
+    </td>
+    <td>approved</td>
+  </tr>
+  
+  <tr class="low">
+    <td>C027</td>
+    <td>numerical</td>
+    <td>medium</td>
+    <td>](https://fsn1.your-objectstorage.com:443/cobb-artifacts-prod/77/638d0950bb0961b70eb2044375cb56c9e4aba85af64941417dfa1beef3358c.png?x-id=GetObject&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=HULDI5IVO0R3DR12KERN%2F20260428%2Ffsn1%2Fs3%2Faws4_request&X-Amz-Date=20260428T164109Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=18bf9d5826bb46c9e2904aec03b4a7053c1dcb9d90a1b9100f7dedda23114daf)
+
+Figure 1: Financial AI accuracy by system architecture (%).</td>
+    <td>Supported</td>
+    <td>
+      
+        <span class="risk-low">Low</span>
+      
+    </td>
+    <td>approved</td>
+  </tr>
+  
+  <tr class="low">
+    <td>C028</td>
+    <td>numerical</td>
+    <td>medium</td>
+    <td>Source: FinanceBench (2024); TAT-QA (2021).</td>
+    <td>Supported</td>
+    <td>
+      
+        <span class="risk-low">Low</span>
+      
+    </td>
+    <td>approved</td>
+  </tr>
+  
+  <tr class="low">
+    <td>C029</td>
+    <td>unknown</td>
+    <td>medium</td>
+    <td>Note: figures use different evaluation subsets — direct comparison requires care.</td>
+    <td>Supported</td>
+    <td>
+      
+        <span class="risk-low">Low</span>
+      
+    </td>
+    <td>approved</td>
+  </tr>
+  
+  <tr class="low">
+    <td>C030</td>
+    <td>unknown</td>
+    <td>medium</td>
+    <td>Each pattern addresses specific limitations in general-purpose language models when applied to financial analysis tasks requiring precision and multi-step reasoning.</td>
+    <td>Supported</td>
+    <td>
+      
+        <span class="risk-low">Low</span>
+      
+    </td>
+    <td>approved</td>
+  </tr>
+  
+</table>
+
+</body>
+</html>
