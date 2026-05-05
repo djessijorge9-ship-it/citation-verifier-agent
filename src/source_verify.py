@@ -1,6 +1,15 @@
 from sources import get_source, validate_citation_ids
 
 
+def select_evidence_excerpt(matched_sources, sources):
+    for source_id in matched_sources:
+        source = get_source(source_id, sources)
+        if source and source.get("excerpt"):
+            return source["excerpt"]
+
+    return None
+
+
 def verify_with_sources(claim, sources):
     citation_ids = claim.get("citation_ids", [])
     validation = validate_citation_ids(citation_ids, sources)
@@ -9,13 +18,7 @@ def verify_with_sources(claim, sources):
         return claim
 
     matched_sources = validation["resolved"]
-    evidence_excerpt = None
-
-    for source_id in matched_sources:
-        source = get_source(source_id, sources)
-        if source and source.get("excerpt"):
-            evidence_excerpt = source["excerpt"]
-            break
+    evidence_excerpt = select_evidence_excerpt(matched_sources, sources)
 
     claim["source_grounded"] = True
     claim["verification_method"] = "source_grounded"

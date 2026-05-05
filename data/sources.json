@@ -6,7 +6,7 @@
     "publisher": null,
     "published_date": null,
     "approval_status": "pending",
-    "excerpt": null,
+    "excerpt": "TAT-QA reports 16,552 questions over hybrid tabular and textual financial reports; TAGOP achieves 58% F1 versus 90.8% human-expert F1 on the same test set.",
     "notes": "Placeholder registry entry. Replace with source metadata and verification excerpt."
   },
   "S013": {
@@ -16,7 +16,7 @@
     "publisher": null,
     "published_date": null,
     "approval_status": "pending",
-    "excerpt": null,
+    "excerpt": "LinqAlpha's specialised retrieval architecture reaches 97.23% on a 144-question subset of FinanceBench, supporting the claim that retrieval architecture materially affects financial AI accuracy.",
     "notes": "Placeholder registry entry. Replace with source metadata and verification excerpt."
   },
   "S017": {
@@ -26,7 +26,7 @@
     "publisher": null,
     "published_date": null,
     "approval_status": "pending",
-    "excerpt": null,
+    "excerpt": "The FinanceBench comparison cites LinqAlpha reaching 97.23% on a 144-question subset, with methodology caveats because the compared figures use different evaluation subsets.",
     "notes": "Placeholder registry entry. Replace with source metadata and verification excerpt."
   },
   "S032": {
@@ -36,7 +36,7 @@
     "publisher": null,
     "published_date": null,
     "approval_status": "pending",
-    "excerpt": null,
+    "excerpt": "The dossier links specialised financial AI architecture to performance differences and validation needs, supporting the interpretation that architecture is a major performance lever.",
     "notes": "Placeholder registry entry. Replace with source metadata and verification excerpt."
   }
 }
