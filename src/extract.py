@@ -1,6 +1,7 @@
 import re
 import nltk
 from nltk.tokenize import sent_tokenize
+from citations import extract_citation_ids
 
 nltk.download("punkt")
 nltk.download("punkt_tab")
@@ -46,6 +47,7 @@ def extract_claims(text):
             "type": "unknown",
             "materiality": "medium",
             "paragraph_ref": f"sentence_{index}",
+            "citation_ids": extract_citation_ids(clean_sentence),
         })
 
     return claims
